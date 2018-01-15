@@ -2,18 +2,21 @@
     specify a width and height.  The width can be absolute (in pixels) or
     relative (in percentage), but the height must be an absolute value.
     Of course, you can specify width and height with CSS instead -->
-<div id="mapdiv" style="width: 100%; height: 600px;"></div>
+<div id="mapdiv" style="width: 100%; height: 100%"></div>
 
 <!-- Your script tags should be placed before the closing body tag. -->
-<link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
-<script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap.js"></script>
+<link rel="stylesheet" href="storymap.css">
+<script type="text/javascript" src="storymap.js"></script>
 
 <script>
 // storymap_data can be an URL or a Javascript object
-var storymap_data = 'https://raw.githubusercontent.com/geodatup/JP-World-Tour/master/storymaps/storymap_data.json';
+//var storymap_data = 'https://raw.githubusercontent.com/geodatup/JP-World-Tour/master/storymaps/storymap_data.json';
+var storymap_data = './storymaps/storymap_data.json';
 
 // certain settings must be passed within a separate options object
-var storymap_options = {show_lines:false,
+var storymap_options = {
+    show_lines:false,
+
 	map_type:'https://api.mapbox.com/styles/v1/mapbox/navigation-preview-day-v2/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoieW9naXMiLCJhIjoiX3BPdFpWWSJ9.TKVBoQaLtmDdaDOUJkcJ9A'};
 
 var storymap = new VCO.StoryMap('mapdiv', storymap_data, storymap_options);
@@ -22,15 +25,14 @@ window.onresize = function(event) {
 }
 
 
-/* Ajout des layers au chargement de la Map */
+/* Ajout des layers au chargement de la Map 
 storymap._onLoaded = function(event){
-	console.log("ajout Layers")
 	var latlngs = [
     [45.51, -122.68],
     [37.77, -122.43],
     [34.04, -118.2]
 ];
 var polyline = L.polyline(latlngs, {color: 'red'}).addTo(storymap.map);
-}
+}*/
 
 </script>

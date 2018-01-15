@@ -1,16 +1,24 @@
 {
+
   "storymap": {
-    "slides": [
+
+   "slides": [
       {
+		"background" : {
+		"opacity":	50,
+		"url": "https://github.com/geodatup/JP-World-Tour/blob/master/images/IMG_0550.JPG?raw=true"
+		},
         "date": "",
         "media": {
-          "url": "https://github.com/geodatup/JP-World-Tour/blob/master/images/IMG_0550.JPG?raw=true",
+          "url": "",
           "caption": "",
           "credit": ""
         },
-        "type": "overview",
+        "type":"overview",
         "location": {
+        	"icon": "http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
           "line": true
+
         },
         "text": {
           "headline": "Colporter la terre à mesure",
@@ -28,7 +36,7 @@
           "lat": 47.0099254,
           "line": true,
           "lon": 0.0777011999999786,
-          "zoom": 2
+          "zoom": 1
         },
         "text": {
           "headline": "Le départ  de pépé JP pour son tour du monde",
@@ -71,8 +79,10 @@
           "caption": "Charlotte"
         }
       }
-    ],
-    "call_to_action_text": "",
+    ],	
+	  "language": "fr",
+    "calculate_zoom":"false",
+    "call_to_action_text": "Voyager",
     "map_as_image": false,
     "call_to_action": true
   }
