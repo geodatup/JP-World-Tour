@@ -291,6 +291,23 @@
     },
     {
       "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "popup-text": "What is this?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": 
+            [
+            28.4326171875,
+            49.210420445650286
+          ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": {},
       "geometry": {
         "type": "Point",
