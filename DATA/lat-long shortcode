@@ -43,3 +43,5 @@
 [leaflet-line color="grey" weight=10 dasharray="2,15" latlngs="47.134,51.952;43.1270,131.9066" classname=marching-ants fitbounds=1]
 
 
+[leaflet-line color="lightgrey" latlngs="-180,55;180,55"]
+[leaflet-line color="lightgrey" latlngs="-180,45;180,45"]
